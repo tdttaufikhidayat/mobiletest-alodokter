@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ALODOKTER</string>
+
+    <string name="test">MOBILE TEST</string>
+    <string name="login">LOGIN</string>
+    <string name="logout">LOGOUT</string>
+    <string name="hint_email">* Email</string>
+    <string name="hint_password">* Password</string>
+
+    <string name="imgcontentdescr">IMG CONTENT DESCRIPTION</string>
+
+    <string name="center" >CENTER</string>
+    <string name="left" >LEFT</string>
+    <string name="right" >RIGHT</string>
+    <string name="exit" >EXIT</string>
+    <string name="try_again" >TRY AGAIN</string>
+    <string name="yes" >YES</string>
+    <string name="no" >NO</string>
+
+    <string name="message" >Message</string>
+    <string name="message_denied" >Some permissions is DENIED</string>
+    <string name="message_exit">Please press back again to exit.</string>
+    <string name="message_logout" >Are you sure you want to logout ?</string>
+</resources>

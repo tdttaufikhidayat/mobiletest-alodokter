@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Font">
+        <attr name="fontname" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewCircle">
+        <attr name="ivc_borderwidht" format="dimension" />
+        <attr name="ivc_bordercolor" format="color" />
+        <attr name="ivc_borderoverlay" format="boolean" />
+        <attr name="ivc_fillcolor" format="color" />
+    </declare-styleable>
+</resources>

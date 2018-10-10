@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadeScrollbars="true"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        android:scrollbarSize="@dimen/dft_scrollview_scrollbarsize"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+        android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:orientation="vertical"
+                android:gravity="center"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:contentDescription="@string/imgcontentdescr"
+                    android:src="@mipmap/alodokter_icon" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/imgcontentdescr"
+                        android:src="@mipmap/ic_user" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mainlogin_txtinput_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/blue_9"
+                        attrs:hintTextAppearance="@style/mainlogin_txtinput_textsize"
+                        attrs:theme="@style/mainlogin_txtinput_color">
+
+                        <com.test.alodokter.widget.EditTextFont
+                            android:id="@+id/mainlogin_edt_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_email"
+                            android:inputType="textMultiLine|textEmailAddress"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18sdp"
+                            attrs:fontname="Champagne Limousines Bold.ttf" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/imgcontentdescr"
+                        android:src="@mipmap/ic_password" />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/mainlogin_txtinput_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColorHint="@color/blue_9"
+                        attrs:hintTextAppearance="@style/mainlogin_txtinput_textsize"
+                        attrs:theme="@style/mainlogin_txtinput_color">
+
+                        <com.test.alodokter.widget.EditTextFont
+                            android:id="@+id/mainlogin_edt_password"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_password"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_18sdp"
+                            attrs:fontname="Champagne Limousines Bold.ttf" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+                <com.test.alodokter.widget.ButtonFont
+                    android:id="@+id/mainlogin_btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_35sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/btn_pressed_login"
+                    android:maxLines="1"
+                    android:text="@string/login"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16sdp"
+                    attrs:fontname="Champagne Limousines Bold.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.test.alodokter.widget.TextViewFont
+        android:id="@+id/mn_view_txt_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:gravity="end"
+        android:maxLines="1"
+        android:text="@string/test"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        attrs:fontname="Champagne Limousines Bold.ttf" />
+</LinearLayout>

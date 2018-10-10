@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogalert_lyt_mainview"
+    android:layout_width="@dimen/_250sdp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp">
+
+    <com.test.alodokter.widget.TextViewFont
+        android:id="@+id/dialogalert_txt_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:minLines="2"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/message"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_16sdp"
+        attrs:fontname="Champagne Limousines.ttf" />
+
+    <LinearLayout
+        android:id="@+id/dialogalert_lyt_onebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.test.alodokter.widget.ButtonFont
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dft_btn_submit_height"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_red"
+            android:clickable="false"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            android:visibility="invisible"
+            attrs:fontname="Champagne Limousines Bold.ttf" />
+
+        <com.test.alodokter.widget.ButtonFont
+            android:id="@+id/dialogalert_btn_center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dft_btn_submit_height"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_green"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            attrs:fontname="Champagne Limousines Bold.ttf" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/dialogalert_lyt_twobtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.test.alodokter.widget.ButtonFont
+            android:id="@+id/dialogalert_btn_left"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dft_btn_submit_height"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_red"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/left"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            attrs:fontname="Champagne Limousines Bold.ttf" />
+
+        <com.test.alodokter.widget.ButtonFont
+            android:id="@+id/dialogalert_btn_right"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dft_btn_submit_height"
+            android:layout_weight="1"
+            android:background="@drawable/btn_pressed_green"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingEnd="@dimen/_10sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="@string/right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            attrs:fontname="Champagne Limousines Bold.ttf" />
+    </LinearLayout>
+</LinearLayout>

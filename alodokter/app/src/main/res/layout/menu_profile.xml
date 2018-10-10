@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:attrs="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fadeScrollbars="true"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:scrollbarSize="@dimen/dft_scrollview_scrollbarsize"
+    android:scrollbarStyle="outsideInset"
+    android:scrollbarThumbVertical="@drawable/scrollbar_vertical_thumb"
+    android:scrollbarTrackVertical="@drawable/scrollbar_vertical_track"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dft_input_lyt_mainview_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_4"
+            android:orientation="vertical"
+            android:padding="@dimen/dft_input_lyt_viewgrey_padding"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="@dimen/dft_input_lyt_viewwhite_padding">
+
+                <com.test.alodokter.widget.ImageViewCircle
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:src="@mipmap/profile_menu"
+                    attrs:ivc_bordercolor="@color/black"
+                    attrs:ivc_borderoverlay="false"
+                    attrs:ivc_borderwidht="@dimen/_1sdp"
+                    attrs:ivc_fillcolor="@color/white" />
+
+                <LinearLayout
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.test.alodokter.widget.TextViewFont
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TAUFIK HIDAYAT"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        attrs:fontname="Champagne Limousines Bold.ttf" />
+
+                    <com.test.alodokter.widget.TextViewFont
+                        android:id="@+id/mn_profile_txt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="EMAIL"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        attrs:fontname="Champagne Limousines Bold.ttf" />
+
+                    <com.test.alodokter.widget.TextViewFont
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:text="+62 1234567"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_16sdp"
+                        attrs:fontname="Champagne Limousines Bold.ttf" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

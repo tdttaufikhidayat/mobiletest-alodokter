@@ -1,0 +1,20 @@
+<resources>
+    <!-- drawable ============================================================================== -->
+    <dimen name="scrollbar_radius">@dimen/_6sdp</dimen>
+    <dimen name="edt_square_width">@dimen/_1sdp</dimen>
+
+    <dimen name="dft_scrollview_scrollbarsize">@dimen/_3sdp</dimen>
+    <dimen name="dft_btn_submit_height">@dimen/_35sdp</dimen>
+    <dimen name="dft_btn_submit_margintop">@dimen/_10sdp</dimen>
+    <dimen name="dft_btn_submit_textsize">@dimen/_16sdp</dimen>
+
+    <dimen name="dft_input_txt_menutitle_textsize">@dimen/_20sdp</dimen>
+    <dimen name="dft_input_lyt_mainview_padding">@dimen/_10sdp</dimen>
+    <dimen name="dft_input_lyt_viewgrey_padding">@dimen/_5sdp</dimen>
+    <dimen name="dft_input_lyt_viewwhite_padding">@dimen/_15sdp</dimen>
+    <dimen name="dft_input_lyt_margintop">@dimen/_10sdp</dimen>
+    <dimen name="dft_input_txt_textsize">@dimen/_16sdp</dimen>
+    <dimen name="dft_input_edt_textsize">@dimen/_16sdp</dimen>
+    <dimen name="dft_input_edt_margintop">@dimen/_5sdp</dimen>
+    <dimen name="dft_input_edt_padding">@dimen/_5sdp</dimen>
+</resources>
